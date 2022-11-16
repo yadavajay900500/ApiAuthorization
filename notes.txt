@@ -1,0 +1,14 @@
+
+this part is writen in body of the get Api in json() formate 
+and send the req on Url:get Api:http://localhost:2020/course/:number
+{
+    "name":"Hindi",
+    "courses":[220,213,187,287],
+    "role":"teacher"
+}
+or
+{
+    "name":"Hindi",
+    "courses":[220,213,187,287],
+    "role":"student"
+}
