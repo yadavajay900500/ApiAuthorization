@@ -17,7 +17,7 @@ const apiModel = Mongoose.model("apiAuth", userShema)
 
 
 const newsDataBaseDetails = Mongoose.connect(
-    "mongodb+srv://ajay:900@cluster0.umyjcyd.mongodb.net/Api_Authorization?retryWrites=true&w=majority",
+    "............your mongodb Account path",
     (err) => {
         if (!err) {
             console.log("DataBase connected Suceessfully")
@@ -34,7 +34,7 @@ app.get("/home", (req, res) => {
 
 
 app.get("/course/grades", authPage(["teacher", "admin"]), async (req, res) => {
-    console.log("000000000", req.body)
+    //there is no need to save the req.body
     const newData = new apiModel(req.body)
     newData.save((err, result) => {
         if (result) {
